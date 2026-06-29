@@ -56,15 +56,10 @@ At the data service layer, the JSON → Image function serves as a **rendering n
 ### 4. Typical Data Flow Architecture
 
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-
-│  Image      │ →  │  Pixel      │ →  │  Data       │ →  │  Image      │
-
-│  Capture    │    │  Matrix     │    │  Storage    │    │  Restoration│
-
-│  (Phone/    │    │  JSON       │    │  (Database/ │    │  (Visual-   │
-
-│   Camera)   │    │  Export     │    │   Data Lake)│    │   ization)  │
-
+│   Image     │    │   Pixel     │    │   Data      │    │   Image     │
+│   Capture   │ -> │   Matrix    │ -> │   Storage   │ -> │ Restoration│
+│  (Phone/    │    │   JSON      │    │  (Database/ │    │  (Visual-   │
+│   Camera)   │    │   Export    │    │   Data Lake)│    │   ization)  │
 └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
 
 ---
