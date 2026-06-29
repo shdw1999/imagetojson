@@ -54,12 +54,13 @@ At the data service layer, the JSON → Image function serves as a **rendering n
 - Serving as the backend rendering engine for image data API gateways
 
 ### 4. Typical Data Flow Architecture
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
-│ Image │ → │ Pixel │ → │ Data │ → │ Image │
-│ Capture │ │ Matrix │ │ Storage │ │ Restoration│
-│ (Phone/ │ │ JSON │ │ (Database/ │ │ (Visual- │
-│ Camera) │ │ Export │ │ Data Lake)│ │ ization) │
-└─────────────┘ └─────────────┘ └─────────────┘ └─────────────┘
+
+┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
+│  Image      │ →  │  Pixel      │ →  │  Data       │ →  │  Image      │
+│  Capture    │    │  Matrix     │    │  Storage    │    │  Restoration│
+│  (Phone/    │    │  JSON       │    │  (Database/ │    │  (Visual-   │
+│   Camera)   │    │  Export     │    │   Data Lake)│    │   ization)  │
+└─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
 
 ---
 
@@ -106,13 +107,6 @@ Issues and Pull Requests are welcome! If you have new feature suggestions or imp
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-## 🔗 Links
-
-- **GitHub Repository**: [https://github.com/yourusername/pixel-matrix-parser](https://github.com/yourusername/pixel-matrix-parser)
-- **Live Demo**: [https://yourusername.github.io/pixel-matrix-parser](https://yourusername.github.io/pixel-matrix-parser)
 
 ---
 
